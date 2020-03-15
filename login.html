@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            line-height: 1.8;
+            background: #eee;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none !important;
+            color: #161616;
+        }
+
+        a:hover {
+            color: #005757;
+        }
+
+        button,
+        input {
+            outline: none !important;
+            border-radius: 20px !important;
+        }
+
+        .flex_row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .form--login {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .form--login input {
+            width: 100%;
+            height: 40px;
+            margin: 5px auto;
+            font-size: 1.2rem;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.416);
+        }
+
+        .form--login button {
+            width: 48%;
+            height: 40px;
+            font-size: 1.2rem;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #ffd3d3;
+            margin: 10px 0;
+            font-weight: 600;
+            transition: all .2s;
+            cursor: pointer;
+        }
+
+        .form--login form button:hover {
+            background: #000000e8;
+            color: white;
+            box-shadow: 0 0 10px #404040;
+        }
+
+        .login--width button {
+            color: white;
+        }
+
+        #facebook--login {
+            background: #0003ff;
+            border: 1px solid #0003ff;
+        }
+
+        #facebook--login:hover {
+            background: #004fead6;
+        }
+
+        #google--login {
+            background: #dc3545;
+            border: 1px solid #dc3545;
+        }
+
+        #google--login:hover {
+            background: #dc3545d6;
+        }
+
+        form p span {
+            width: 50px;
+            height: 50px;
+            background: #dedede;
+            border-radius: 50px;
+            font-size: 20px;
+            padding: 5px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form--login">
+        <h1>LOGIN</h1>
+        <form>
+            <input type="text" placeholder="username" />
+            <input type="password" class="password" placeholder="password" />
+            <div class="flex_row">
+                <a href="#"><span>forget password?</span> </a>
+                <a href="#"><span>create new account</span></a>
+            </div>
+            <button>LOGIN</button>
+            <p><span>OR</span></p>
+        </form>
+        <div class="flex_row login--width">
+            <button id="facebook--login">FACEBOOK</button>
+            <button id="google--login">GOOGLE</button>
+        </div>
+    </div>
+</body>
+
+</html>
